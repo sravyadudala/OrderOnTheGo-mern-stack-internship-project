@@ -1,0 +1,236 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Order-on-the-go server",
+    "collectionId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+    "dateExported": "2025-06-28T09:44:29.960Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "authentication",
+            "containerId": "",
+            "created": "2025-06-23T14:15:32.001Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b969d484-9472-454f-9c7d-e416e8c15979",
+            "name": "products",
+            "containerId": "",
+            "created": "2025-06-23T14:15:58.047Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ddfde757-826f-401e-89fe-5d75ee54f2fc",
+            "name": "restaurant",
+            "containerId": "",
+            "created": "2025-06-23T14:42:18.433Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3f7c8ebd-7e64-4ee0-ab49-9e586a24cd4a",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "user-registration",
+            "url": "http://localhost:5000/api/auth/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-22T04:40:06.515Z",
+            "modified": "2025-06-22T04:40:06.515Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userName\":\"Vasu\",\n  \"email\":\"vasu@email.com\",\n  \"password\": \"vasu24\",\n  \"userType\":\"user\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "74bbd22b-1b07-4e2b-b2ed-b6ec7ac0f1a4",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "b969d484-9472-454f-9c7d-e416e8c15979",
+            "name": "insertProduct",
+            "url": "http://localhost:5000/api/products/insert",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-23T01:24:26.563Z",
+            "modified": "2025-06-24T13:07:15.715Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"productName\": \"Rani Chicken Masala\",\r\n  \"description\": \"House-special spicy chicken curry with rich gravy\",\r\n  \"restaurantId\": \"685a98450e3a9f751cb2def4\",\r\n  \"price\": 150,\r\n  \"discount\": 10,\r\n  \"category\": \"non-veg\",\r\n  \"imageUrl\": \"https://www.whiskaffair.com/wp-content/uploads/2021/10/Andhra-Chicken-Curry-2-3.jpg\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "34d2f7c2-1b9e-44c1-94da-b8e0337d1977",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "ddfde757-826f-401e-89fe-5d75ee54f2fc",
+            "name": "fetchRestaurants",
+            "url": "http://localhost:5000/api/restaurants/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-06-23T06:57:33.783Z",
+            "modified": "2025-06-25T15:37:27.029Z",
+            "headers": []
+        },
+        {
+            "_id": "d33fa6d3-8b39-4260-abf4-9899c4879629",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "restaurant-registraion",
+            "url": "http://localhost:5000/api/auth/restaurant/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-06-22T04:41:12.032Z",
+            "modified": "2025-06-24T12:21:25.074Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"userName\": \"Rani\",\r\n  \"password\": \"rani1234\",\r\n  \"email\": \"rani@hotelrani.com\",\r\n  \"restaurantName\": \"Hotel Rani\",\r\n  \"address\": \"Opp SR Gudlavalleru Enginnering College, Gudlavalleru\",\r\n  \"imageUrl\": \"https://content3.jdmagicbox.com/v2/comp/chennai/j3/044pxx44.xx44.130121121634.h6j3/catalogue/naidu-andhra-mess-thoraipakkam-chennai-andhra-restaurants-70rnm9h5zs.jpg\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "77b8f03f-5c0d-44de-ae7e-df9c41d82f1e",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "b969d484-9472-454f-9c7d-e416e8c15979",
+            "name": "getProduct",
+            "url": "http://localhost:5000/api/products/fetch?685a9cd70e3a9f751cb2df0a",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-06-23T01:40:02.083Z",
+            "modified": "2025-06-25T07:33:23.854Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "685a9cd70e3a9f751cb2df0a",
+                    "value": "",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "7e5ef8fb-d408-43c9-9555-82376f1d30c4",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "ddfde757-826f-401e-89fe-5d75ee54f2fc",
+            "name": "promoteRestaurant",
+            "url": "http://localhost:5000/api/admin/promoteRestaurant/685a95490e3a9f751cb2dedb",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-06-23T09:37:55.961Z",
+            "modified": "2025-06-25T10:58:24.678Z",
+            "headers": []
+        },
+        {
+            "_id": "db1952c8-3774-42c1-a264-029d236abaf9",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "restaurant-login",
+            "url": "http://localhost:5000/api/auth/restaurant/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-22T05:04:55.375Z",
+            "modified": "2025-06-26T04:58:02.503Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"rani@hotelrani.com\",\n  \"password\": \"rani1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a62ca1eb-d7cf-48da-9a4b-5e85e58d8338",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "b969d484-9472-454f-9c7d-e416e8c15979",
+            "name": "updateProduct",
+            "url": "http://localhost:5000/api/products/update/6858ae3ba2fc04644475c200",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-23T01:47:55.513Z",
+            "modified": "2025-06-23T01:56:04.392Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"price\": 220,\r\n  \"discount\": 8,\r\n  \"category\": \"fried rice\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "af3f054e-7d2a-4d03-8d94-4374fcb6968f",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "b969d484-9472-454f-9c7d-e416e8c15979",
+            "name": "deleteProduct",
+            "url": "http://localhost:5000/api/products/delete/6858ae3ba2fc04644475c200",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-06-23T03:51:11.915Z",
+            "modified": "2025-06-23T03:52:10.119Z",
+            "headers": []
+        },
+        {
+            "_id": "4db9936b-b942-4115-85e5-41b6fccc0cbc",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "user-login",
+            "url": "http://localhost:5000/api/auth/user/login",
+            "method": "POST",
+            "sortNum": 115000,
+            "created": "2025-06-23T14:36:14.779Z",
+            "modified": "2025-06-23T14:37:46.741Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"vasu@email.com\",\n  \"password\": \"vasu24\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7785c2d8-97ef-4d79-85bb-504a55458ec1",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "fa2960f4-e677-48ad-a904-d4182c47fc8a",
+            "name": "adminLogin",
+            "url": "http://localhost:5000/api/admin/login",
+            "method": "POST",
+            "sortNum": 125000,
+            "created": "2025-06-23T09:33:37.154Z",
+            "modified": "2025-06-23T09:36:54.338Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"uname\":\"admin\",\n  \"password\":\"admin\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "640a5689-7862-438c-b4c1-612032cfbc3e",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "ddfde757-826f-401e-89fe-5d75ee54f2fc",
+            "name": "fetchPromotedRestaurants",
+            "url": "http://localhost:5000/api/restaurants/promoted",
+            "method": "GET",
+            "sortNum": 125000,
+            "created": "2025-06-23T14:43:44.591Z",
+            "modified": "2025-06-23T14:44:14.328Z",
+            "headers": []
+        },
+        {
+            "_id": "0df71f0f-49a4-4fac-b5a8-13e8b1a3dee8",
+            "colId": "7f02cb5b-0c20-4ae9-bc58-a2defb4a909a",
+            "containerId": "ddfde757-826f-401e-89fe-5d75ee54f2fc",
+            "name": "postRating",
+            "url": "http://localhost:5000/api/restaurants/rating",
+            "method": "POST",
+            "sortNum": 135000,
+            "created": "2025-06-25T15:36:09.832Z",
+            "modified": "2025-06-26T10:03:01.938Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"restaurantId\": \"685a95490e3a9f751cb2dedb\",\n  \"rating\": 3\n}\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "poeHJr3aa1mWtltybsJIiqxl_haf14ELiIIBuZF8D7nJt-i-PP_nAYl4Npjc8PJzMrZhnxNKoVZsIE44zGfWUQ"
+}
